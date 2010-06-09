@@ -39,10 +39,6 @@
 (setq history-delete-duplicates t)  ;; emacs22
 (put 'scroll-left 'disabled nil)
 
-;; I don't want lots of perforce output - it messes with me
-(setq p4-verbose nil)
-(when google (setq p4-use-p4config-exclusively t))
-
 ;; Put backup files in a single directory to prevent tilde explosion
 (add-to-list 'backup-directory-alist '("." . "~/bak")) 
 

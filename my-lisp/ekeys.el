@@ -8,9 +8,6 @@
 ;; I always type C-o to open files
 (global-set-key "\C-o" 'find-file)
 
-;; gtags key bindings
-(when google (global-set-key "\C-f" 'google-show-tag-locations))
-
 ;; split three way
 (defun split-three-ways ()
   (interactive)

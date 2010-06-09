@@ -90,10 +90,6 @@ Otherwise evaluate optional ELSE forms."
 (defvar winnt (eq system-type 'windows-nt))
 (defvar linux (eq system-type 'gnu/linux))
 
-;; true for desktop box at google
-(defvar google (or (string-match ".muggshot$" hostname)
-		   (string-match ".google.com$" hostname)))
-
 (defvar macos (eq system-type 'darwin))
 (defvar darwin macos)
 
