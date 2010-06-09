@@ -5,9 +5,9 @@
 
 (require 'cl)
 
-;; All of the real code is contained in a directory named "elisp" 
+;; All of the real code is contained in a directory named "bentzelisp"
 ;; in my home directory. Try to find it across the different platforms.
-(defvar elisp-root (concat (getenv "HOME") "/elisp")
+(defvar elisp-root (concat (getenv "HOME") "/bentzelisp")
   "My home directory -- the root of my personal emacs load-path.")
 
 ;; Add all the elisp directories under ~/elisp to my load path
