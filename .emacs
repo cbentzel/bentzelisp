@@ -7,12 +7,13 @@
 
 ;; All of the real code is contained in a directory named "bentzelisp"
 ;; in my home directory. Try to find it across the different platforms.
-(defvar elisp-root (concat (getenv "HOME") "/bentzelisp")
+(defvar elisp-root (concat (file-name-as-directory (getenv "HOME"))
+			   "bentzelisp")
   "My home directory -- the root of my personal emacs load-path.")
 
 ;; Add all the elisp directories under ~/elisp to my load path
 (defun add-to-path (p)
-  (let ((full-path (concat elisp-root p)))
+  (let ((full-path (concat (file-name-as-directory elisp-root) p)))
 	(unless (memq full-path load-path)
 	  (add-to-list 'load-path full-path))))
 (add-to-path "my-lisp")
