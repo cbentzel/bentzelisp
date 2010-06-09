@@ -18,7 +18,7 @@
 	  (add-to-list 'load-path full-path))))
 (add-to-path "my-lisp")
 (add-to-path "site-lisp")
-(add-to-path "color-theme")
+(add-to-path "color-theme-6.6.0")
 
 ;; Import the files.
 (require 'efuncs) ; helper functions
