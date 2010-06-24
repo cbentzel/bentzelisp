@@ -26,6 +26,7 @@
 (call-if-bound 'column-number-mode t) ;; show column numbers
 (call-if-bound 'delete-selection-mode 1) ;; auto-replace text when marked up
 (call-if-bound 'global-font-lock-mode t) ;; color the fonts
+(call-if-bound 'windmove-default-keybindings) ;; quick keyboard moves
 (setq confirm-kill-emacs 'yes-or-no-p) ;; Don't exit emacs without asking
 (setq visible-bell t) ;; I hate beeps
 (setq require-final-newline t) ;; add final newline if missing
@@ -34,7 +35,7 @@
 (setq-default indent-tabs-mode nil) ; don't use tabs for indentation
 (setq message-log-max 10000) ; increase message log size
 (setq history-length 1000)  ; increase history size (default is 30)
-(setq completion-ignore-case t)         ;; ignore case when completing names
+(setq completion-ignore-case t) ;; ignore case when completing names
 (setq read-file-name-completion-ignore-case t) ;; emacs22
 (setq history-delete-duplicates t)  ;; emacs22
 (put 'scroll-left 'disabled nil)
