@@ -79,6 +79,12 @@ If NOQUOTE is nil, puts puts \\. and $ around REGEXP."
 (add-hook 'python-mode-hook 'make-newline-indent)
 (add-hook 'python-mode-hook 'show-trailing-whitespace)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; Shell configuration.
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on) 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
