@@ -5,6 +5,11 @@
 
 (require 'cl)
 
+;; Load host specific configuration first.
+(defun try-to-load-config-file (f)
+  (when (file-exists-p f) (load-file f)))
+(try-to-load-config-file "~/.local_emacs_config.el")
+
 ;; All of the real code is contained in a directory named "bentzelisp"
 ;; in my home directory. Try to find it across the different platforms.
 (defvar elisp-root (concat (file-name-as-directory (getenv "HOME"))
@@ -27,7 +32,4 @@
 (require 'ekeys) ; Key bindings
 (require 'modes) ; Mode-specific configurations
 (require 'myfont) ; Font/color settings
-
-;; Load host specific configuration after everthing else is done. 
-(try-to-load-file "~/.local_emacs_config.el")
 

@@ -49,5 +49,4 @@
   (setq uniquify-buffer-name-style 'post-forward-angle-brackets))
 (uniquify-buffers)
 
-
 (provide 'my-config)
