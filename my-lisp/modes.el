@@ -3,6 +3,7 @@
 (require 'cl)
 (require 'emacs-type)
 (require 'google-c-style)
+(require 'go-mode)
 
 ;;; first, a few utilities for the rest of the file
 
@@ -73,7 +74,6 @@ If NOQUOTE is nil, puts puts \\. and $ around REGEXP."
 ;; Python configuration.
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 (add-auto-mode 'python-mode "py")
 (add-hook 'python-mode-hook 'warn-about-80-lines)
 (add-hook 'python-mode-hook 'make-newline-indent)
@@ -85,6 +85,13 @@ If NOQUOTE is nil, puts puts \\. and $ around REGEXP."
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on) 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; Go configuration.
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-auto-mode 'go-mode "go")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
