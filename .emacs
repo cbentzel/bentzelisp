@@ -32,4 +32,5 @@
 (require 'ekeys) ; Key bindings
 (require 'modes) ; Mode-specific configurations
 (require 'myfont) ; Font/color settings
+(require 'psvn) ; SVN integration
 
