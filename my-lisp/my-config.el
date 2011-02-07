@@ -49,4 +49,10 @@
   (setq uniquify-buffer-name-style 'post-forward-angle-brackets))
 (uniquify-buffers)
 
+;; Force git pager to NULL so it works well within shell-mode
+(setenv "GIT_PAGER" "")
+ 
+;; Use emacsserver so we can do commands in here.
+(server-start)
+
 (provide 'my-config)
