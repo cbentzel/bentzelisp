@@ -1,3 +1,6 @@
 This is my cross-platform elisp repository.
 
-After cloning it, you'll need to install the color-theme package.
+After cloning it, you'll need to install the color-theme package from 
+http://download.savannah.gnu.org/releases/color-theme/color-theme-6.6.0.tar.gz
+
+Also, in homedir do ln -s .emacs bentzelisp/.emacs
