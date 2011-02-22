@@ -10,7 +10,6 @@
 
 (setq user-full-name "Chris Bentzel")
 
-
 ;; useful for shorter functions
 (defun call-if-bound (func &rest args)
   "Calls FUNC passing it ARGS if func is fbound."
@@ -51,8 +50,12 @@
 
 ;; Force git pager to NULL so it works well within shell-mode
 (setenv "GIT_PAGER" "")
- 
-;; Use emacsserver so we can do commands in here.
+
+;; Set up emacsserver/emacsclient
 (server-start)
+;; TODO(cbentzel): This needs to change based on which version of emacs is being run.
+(if (eq system-type 'darwin)
+  (setenv "EDITOR" "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient")
+  (setenv "EDITOR" "emacsclient"))
 
 (provide 'my-config)
