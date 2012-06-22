@@ -56,6 +56,8 @@
 ;; TODO(cbentzel): This needs to change based on which version of emacs is being run.
 (if (eq system-type 'darwin)
   (setenv "EDITOR" "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient")
-  (setenv "EDITOR" "emacsclient"))
+  (if (eq system-type 'windows-nt)
+    (setenv "EDITOR" "emacsclient.exe")
+    (setenv "EDITOR" "emacsclient")))
 
 (provide 'my-config)
