@@ -24,8 +24,10 @@
 (add-to-path "my-lisp")
 (add-to-path "site-lisp")
 (add-to-path "color-theme-6.6.0")
+(add-to-path "exec-path-from-shell")
 
 ;; Import the files.
+(require 'exec-path-from-shell) ; OSX shell configuration
 (require 'efuncs) ; helper functions
 (require 'emacs-type) ; Setup for different platforms/environments
 (require 'my-config) ; Emacs-wide configurations
