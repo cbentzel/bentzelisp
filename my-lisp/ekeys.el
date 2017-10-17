@@ -15,7 +15,7 @@
   (split-window-horizontally)
   (balance-windows))
 
-(global-set-key "\C-x w" 'split-three-ways)
+;; (global-set-key "\C-x w" 'split-three-ways)
 
 ;;
 ;; I hate typing Ctrl-x 5 0 to kill a frame, so I'm rebinding

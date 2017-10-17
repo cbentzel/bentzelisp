@@ -8,7 +8,7 @@
   (set-default-font *site-font*)
   (if (eq system-type 'windows-nt)
       (set-default-font "-outline-Consolas-normal-r-normal-normal-12-97-96-96-c-*-iso8859-1")
-      (set-default-font "Inconsolata-10")))
+      (set-default-font "Inconsolata-14")))
 
 (require 'highlight-80+)
 
